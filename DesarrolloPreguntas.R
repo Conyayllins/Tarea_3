@@ -12,12 +12,17 @@ listaDeNumeros [-1]
 
 #Ejercicio 2:
 # - Al ocupar el unlist la diferencia es de que este arroja sólo [1] 1
-# - Al ocupar el if en la función
+# - Al ocupar el if en la funci
  
 unlist(listaDeNumeros[5]) 
-if(5="tarea3"){
-  unlist(listaDeNumeros[5])
-}
+
+if(listaDeNumeros[5]+1>0){
+  print("se cumple")
+  }
+
+if(unlist(listaDeNumeros[5])+1>0){
+  print("se cumple")
+  }
 
 #Ejercicio 3:
 # al ejecutar listaDeNumeros[5] <- 12 me da el mismo resultado en la consola.  
@@ -31,5 +36,45 @@ listaDeNumeros[5] <- 12
 length(listaDeNumeros)
 
 #Ejercicio 5:
+# - Cuando asigno valorInicial 5 y valorFinal 11, al ejecutar me señala que el 11 es mi último número en la lista.
+# - Cuando invierto los valores me indica que el valor final es 5. 
+# - Cuando ocupo la función length me indica cuantos numeros hay entre el intervalo de los valores, es decir 7 números.
+
+valorInicial:
+  valorFinal
+
+valorInicial <- 5
+valorFinal <- 11
+
+valorInicial <-11
+valorFinal <- 5
+
+length(valorInicial:
+         valorFinal)
+
+#Ejercicio 6
+# - Cuando ejecuto dicha función, la condición for que se genera es contar el recorrido de las variables.
+
+for(i in 1 : 100){
+  print(paste("cuento ",i," misisipis"))
+}
+
+#Ejercicio 7
+
+
+for(listaDeNumeros in 1:11){
+  print(paste("cuento", listaDeNumeros, "Constanza"))
+}
+
+#Ejercicio 8
+#-
+
+length(listaDeNumeros)
+
+for (listaDeNumeros in 1:11){
+  if(paste(""))
+}
+  
+
 
 
