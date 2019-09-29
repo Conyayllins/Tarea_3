@@ -46,8 +46,14 @@ valorInicial:
 valorInicial <- 5
 valorFinal <- 11
 
+valorInicial:
+  valorFinal
+
 valorInicial <-11
 valorFinal <- 5
+
+valorInicial:
+  valorFinal
 
 length(valorInicial:
          valorFinal)
@@ -61,20 +67,108 @@ for(i in 1 : 100){
 
 #Ejercicio 7
 
-
-for(listaDeNumeros in 1:11){
-  print(paste("cuento", listaDeNumeros, "Constanza"))
+for(i in 1: listaDeNumeros){
+  print(paste("cuento ",i," misisipis"))
 }
 
+
 #Ejercicio 8
-#-
 
-length(listaDeNumeros)
-
-for (listaDeNumeros in 1:11){
-  if(paste(""))
+for(listaDeNumeros in length(listaDeNumeros)){
+  if(listaDeNumeros%%2==0){
+    print("par")
+  }else {
+    print("impar")
+  }
 }
   
 
+#Ejercicio 9
+# - 
+
+VotosSi <- 50
+VotosNo <- 23
+PadrónElectoral <- 73
+quórum <- PadrónElectoral/2+1
+total <- VotosSi + VotosNo                          
+
+if(total<quórum){
+  if(VotosSi>0.3*total|| VotosNo>0.3*total)
+      print("si"||"no")
+  } else {
+      ("no")
+  }
+
+if(VotosSi>VotosNo){
+  print("SI")
+} else {
+  print("NO")
+}
 
 
+
+#Ejercicio 10
+
+Suma<-function(a,b){
+  a+b
+}
+
+Suma(3,4)
+
+Resta <- function(a,b){
+  a-b
+}
+
+Resta(3,4)
+
+Multiplicación <- function(a,b){
+  a*b
+}
+
+Multiplicación(3,4)
+
+División <- function(a,b){
+  a/b
+}
+
+División(3,4)
+
+#Ejercicio 11
+
+radio1=7
+radio2=5
+pi=3.14
+
+Areafinalcirculo <-
+  function(radio1, radio2){
+    (pi*(radio1^2)-
+       pi*(radio2^2))
+  }
+
+Areafinalcirculo(radio1,radio2)
+
+L1=6
+A1=6
+L2=3
+A2=2
+CuadradoUno=(L1*A1)
+CuadradoDos=(L2*A2)
+
+AreaFinalCuadrado<-
+  function(CuadradoUno, CuadradoDos){
+    (CuadradoUno-CuadradoDos)
+  }
+
+AreaFinalCuadrado(CuadradoUno,CuadradoDos)
+
+
+#Ejercicio opcional
+
+listaDeNumeros <- list(2, 5, 6, 2, 1, 5, 6, 10, 11, 20, 15)
+for( i in listaDeNumeros){
+  print(i)
+}
+
+for( i in 1:21){
+  print(i)
+}
